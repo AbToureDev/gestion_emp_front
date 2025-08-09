@@ -39,12 +39,12 @@ export function EmployeeForm({ employee }: EmployeeFormProps) {
                         </div>
                     </div>
                     <div className="space-y-2">
-                        <Label htmlFor="position">Position</Label>
+                        <Label htmlFor="poste">Position</Label>
                         <Input
-                            id="position"
-                            name="position"
+                            id="poste"
+                            name="poste"
                             placeholder="Software Engineer"
-                            defaultValue={employee?.position}
+                            defaultValue={employee?.poste}
                             required
                         />
                     </div>
@@ -60,13 +60,13 @@ export function EmployeeForm({ employee }: EmployeeFormProps) {
                         />
                     </div>
                     <div className="space-y-2">
-                        <Label htmlFor="hireDate">Hire Date</Label>
-                        <Input id="hireDate" name="hireDate" type="date" defaultValue={employee?.hireDate} required />
+                        <Label htmlFor="Employed_date">Hire Date</Label>
+                        <Input id="Employed_date" name="Employed_date" type="text" defaultValue={employee?.Employed_date} required />
                     </div>
                     {state?.message && <p className="text-red-500 text-sm">{state.message}</p>}
                     <div className="flex justify-end gap-2">
                         <Button type="button" variant="outline" asChild>
-                            <Link href="/dashboard">Cancel</Link>
+                            <Link href="/dashboard">retour</Link>
                         </Button>
                         <Button type="submit">{isEditMode ? "Save Changes" : "Add Employee"}</Button>
                     </div>

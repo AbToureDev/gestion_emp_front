@@ -47,9 +47,9 @@ export function EmployeeTable({ employees }: EmployeeTableProps) {
                             <TableRow key={employee.id}>
                                 <TableCell className="font-medium">{employee.firstName}</TableCell>
                                 <TableCell>{employee.lastName}</TableCell>
-                                <TableCell>{employee.position}</TableCell>
+                                <TableCell>{employee.poste}</TableCell>
                                 <TableCell>{employee.email}</TableCell>
-                                <TableCell>{employee.hireDate}</TableCell>
+                                <TableCell>{employee.Employed_date}</TableCell>
                                 <TableCell>
                                     <DropdownMenu>
                                         <DropdownMenuTrigger asChild>

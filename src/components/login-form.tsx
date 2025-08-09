@@ -12,10 +12,13 @@ export function LoginForm() {
         <Card className="mx-auto max-w-sm ">
             <CardHeader className="space-y-1">
                 <CardTitle className="text-2xl font-bold">Admin Login</CardTitle>
-                <CardDescription>Enter your email and password to access the employee management system.</CardDescription>
+                <CardDescription>Saisissez votre adresse électronique et votre mot de passe pour accéder au système de gestion des employés.
+                    email par defaut  est :admin@example.com
+                    password par defaut est : password
+                    .</CardDescription>
             </CardHeader>
             <CardContent>
-                <form action={formAction}  className="space-y-4">
+                <form action={formAction}  className="spacey-4">
                     <div className="space-y-2">
                         <Label htmlFor="email">Email</Label>
                         <Input id="email" name="email" type="email" placeholder="admin@example.com" required />

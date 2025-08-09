@@ -20,7 +20,7 @@ export default async function DashboardPage() {
             <header className="flex items-center justify-between pb-4 border-b mb-6">
                 <h1 className="text-3xl font-bold">Employee Management</h1>
                 <form action={logout}>
-                    <Button variant="outline">Logout</Button>
+                    <Button className='bg-red-500 font-bold text-white' variant="outline">Logout</Button>
                 </form>
             </header>
             <main className="flex-1 space-y-6">
@@ -28,7 +28,7 @@ export default async function DashboardPage() {
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                         <CardTitle className="text-2xl font-bold">Employees</CardTitle>
                         <Link href="/dashboard/add">
-                            <Button>Add Employee</Button>
+                            <Button className='bg-green-400 font-bold text-white'>Add Employee</Button>
                         </Link>
                     </CardHeader>
                     <CardContent>
